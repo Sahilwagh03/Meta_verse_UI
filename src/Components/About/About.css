@@ -1,0 +1,120 @@
+.About_container {
+    position: relative;
+    margin: 100px;
+    height: 600px;
+}
+
+.About_img {
+    display: grid;
+    grid-template-columns: 500px auto;
+    position: relative;
+    height: 100%;
+}
+
+.About_img_container {
+    position: relative;
+}
+
+.About_img_container>.img_1 {
+    position: absolute;
+}
+
+.About_img_container>.img_2 {
+    position: absolute;
+    right: 10px;
+    top: 220px;
+}
+
+
+/* .img_1 {
+    background: url('/src/assets/Vector\ 6.png');
+}
+.img_2 {
+    background: url('/src/assets/Vector\ 5.png');
+} */
+
+
+.About_heading {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.About_heading>h1 {
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.About_heading>h1>span {
+    background: var(--2, linear-gradient(158deg, #F86CF8 0%, #64CEF5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Orbitron;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.About_heading_container {
+    width: 524px;
+    margin-left: 30px;
+    gap: 30px;
+    display: grid;
+}
+
+
+.About_heading_container>h1 {
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.About_heading_container>h1>span {
+    background: var(--2, linear-gradient(158deg, #F86CF8 0%, #64CEF5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Orbitron;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.About_heading_container>p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+    width: 524px;
+}
+
+.About_heading_container>.About_btn {
+    display: flex;
+    width: 137px;
+    height: 44px;
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--3, linear-gradient(158deg, #D10ED1 0%, #10A3DA 100%));
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

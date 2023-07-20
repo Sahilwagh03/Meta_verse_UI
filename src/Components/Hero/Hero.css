@@ -1,0 +1,120 @@
+.hero_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.hero_header_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.hero_heading>h1 {
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+}
+
+.hero_heading>h1>span {
+    font-family: Orbitron;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    background: var(--2, linear-gradient(158deg, #F86CF8 0%, #64CEF5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_heading {
+    width: 612px;
+}
+
+.hero_p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 521px;
+}
+
+.hero_btn_flex {
+    display: flex;
+    gap: 10px;
+}
+
+.hero_btn_flex :nth-child(1) {
+    width: 173px;
+    height: 54px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    background: var(--3, linear-gradient(158deg, #D10ED1 0%, #10A3DA 100%));
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero_btn_flex :nth-child(2) {
+    width: 173px;
+    height: 54px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(156deg, #D10ED1 0%, #10A3DA 100%) 1;
+}
+
+
+.hero_stats{
+    display: flex;
+    gap: 30px;
+}
+
+.hero_stats_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_stats_flex :nth-child(1){
+    color: #FFF;
+    font-family: Orbitron;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero_stats_flex :nth-child(2){
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blur_black{
+    width: 546px;
+    height: 303px;
+    position: absolute;
+    background: #000;
+    filter: blur(100px);
+    bottom: -28%;
+}
