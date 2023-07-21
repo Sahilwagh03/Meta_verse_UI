@@ -32,7 +32,6 @@
 
 
 .logo-text {
-    color: #FFF;
     font-family: Orbitron;
     font-size: 22px;
     font-style: normal;
@@ -58,7 +57,6 @@
 }
 
 .nav_lists > li {
-    color: #FFF;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -121,7 +119,17 @@
 }
 
 
+.Nav_div.scrolled {
+    background: #f0f0f0; /* Set your desired background color here */
+}
 
+.black{
+    color: black;
+}
+
+.white{
+    color: #FFF;
+}
 
 
 
