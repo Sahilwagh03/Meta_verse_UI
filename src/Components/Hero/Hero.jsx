@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import Hero_img from '../../assets/Hero.png'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
     return (
@@ -11,16 +12,32 @@ const Hero = () => {
                         <div className="hero_header">
                             <div className="hero_header_flex">
                                 <div className="hero_heading">
-                                    <h1>Explore the future of the <span>Metaverse</span></h1>
+                                    <motion.h1
+                                        initial={{ opacity: 0, x: -50 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                    >Explore the future of the <span>Metaverse</span></motion.h1>
                                 </div>
-                                <div className="hero_p">
+                                <motion.div className="hero_p"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 0.7 }}
+                                >
                                     Let's explore and create your experience with metaverse.
-                                </div>
-                                <div className="hero_btn_flex">
+                                </motion.div>
+                                <motion.div className="hero_btn_flex"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 1 }}
+                                >
                                     <button>Get started</button>
                                     <button>Explore Now</button>
-                                </div>
-                                <div className="hero_stats">
+                                </motion.div>
+                                <motion.div className="hero_stats"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1, delay: 1.2 }}
+                                >
                                     <div className="hero_stats_flex">
                                         <span>29K+</span>
                                         <span>Artworks</span>
@@ -33,11 +50,14 @@ const Hero = () => {
                                         <span>25K+</span>
                                         <span>Auction</span>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                         <div className="hero_img">
-                            <img src={Hero_img} alt="" />
+                            <motion.img src={Hero_img} alt=""
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5, delay: 0.5 }} />
                             <div className="blur_black"></div>
                         </div>
                     </div>

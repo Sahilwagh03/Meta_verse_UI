@@ -1,10 +1,15 @@
 import React from 'react'
 import './Card.css'
+import {motion} from 'framer-motion'
 
 const Card = (prop) => {
   return (
     <>
-    <div className="card_container">
+    <motion.div className="card_container"
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:1 , delay:0.5}}
+    >
         <div className="card_img">
             <img src={prop.Data.imgUrl} alt="" />
         </div>
@@ -16,7 +21,7 @@ const Card = (prop) => {
                 <button>Explore now</button>
             </div>
         </div>
-    </div>
+    </motion.div>
     </>
   )
 }
